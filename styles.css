@@ -1,0 +1,219 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(to right, #1abc9c, #3498db); /* Gradient */
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    animation: fadeInDown 1s ease-out; /* Animation */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+    animation: slideInLeft 1s ease-out; /* Animation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    animation: slideInRight 1s ease-out; /* Animation */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+    animation: slideInRight 1s ease-out; /* Animation */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f5ebf3;
+    color: #100000;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    background: #f4b400;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    background: #d49800;
+}
+
+/* About, Courses, and Contact Sections */
+.about, .courses, .contact {
+    padding: 4em 0;
+    text-align: center;
+    background: #fff;
+    margin: 2em 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .courses h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.about p, .about ul {
+    text-align: left;
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
